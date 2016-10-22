@@ -10,6 +10,8 @@
 		D78875F71DBB7EAB00B0E10F /* SwiftJsonSchema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78875ED1DBB7EAB00B0E10F /* SwiftJsonSchema.framework */; };
 		D78875FC1DBB7EAB00B0E10F /* SwiftJsonSchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78875FB1DBB7EAB00B0E10F /* SwiftJsonSchemaTests.swift */; };
 		D78875FE1DBB7EAB00B0E10F /* SwiftJsonSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = D78875F01DBB7EAB00B0E10F /* SwiftJsonSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D78876081DBB80CB00B0E10F /* SwiftJsonSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */; };
+		D788760A1DBB811300B0E10F /* PrimaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78876091DBB811300B0E10F /* PrimaryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		D78875F61DBB7EAB00B0E10F /* SwiftJsonSchemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJsonSchemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78875FB1DBB7EAB00B0E10F /* SwiftJsonSchemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJsonSchemaTests.swift; sourceTree = "<group>"; };
 		D78875FD1DBB7EAB00B0E10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJsonSchema.swift; sourceTree = "<group>"; };
+		D78876091DBB811300B0E10F /* PrimaryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				D78875F01DBB7EAB00B0E10F /* SwiftJsonSchema.h */,
 				D78875F11DBB7EAB00B0E10F /* Info.plist */,
+				D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */,
+				D78876091DBB811300B0E10F /* PrimaryType.swift */,
 			);
 			path = SwiftJsonSchema;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					D78875EC1DBB7EAA00B0E10F = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					D78875F51DBB7EAB00B0E10F = {
@@ -196,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D788760A1DBB811300B0E10F /* PrimaryType.swift in Sources */,
+				D78876081DBB80CB00B0E10F /* SwiftJsonSchema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,7 @@
 		D78876021DBB7EAB00B0E10F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.yuankun.SwiftJsonSchema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +349,7 @@
 		D78876031DBB7EAB00B0E10F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +368,7 @@
 		D78876051DBB7EAB00B0E10F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwiftJsonSchemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yuankun.SwiftJsonSchemaTests;
@@ -367,6 +380,7 @@
 		D78876061DBB7EAB00B0E10F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwiftJsonSchemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yuankun.SwiftJsonSchemaTests;
