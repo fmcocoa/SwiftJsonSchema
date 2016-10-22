@@ -12,6 +12,7 @@
 		D78875FE1DBB7EAB00B0E10F /* SwiftJsonSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = D78875F01DBB7EAB00B0E10F /* SwiftJsonSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D78876081DBB80CB00B0E10F /* SwiftJsonSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */; };
 		D788760A1DBB811300B0E10F /* PrimaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78876091DBB811300B0E10F /* PrimaryType.swift */; };
+		D788760C1DBB8FE100B0E10F /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788760B1DBB8FE100B0E10F /* Validators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		D78875FD1DBB7EAB00B0E10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJsonSchema.swift; sourceTree = "<group>"; };
 		D78876091DBB811300B0E10F /* PrimaryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryType.swift; sourceTree = "<group>"; };
+		D788760B1DBB8FE100B0E10F /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				D78875F11DBB7EAB00B0E10F /* Info.plist */,
 				D78876071DBB80CB00B0E10F /* SwiftJsonSchema.swift */,
 				D78876091DBB811300B0E10F /* PrimaryType.swift */,
+				D788760B1DBB8FE100B0E10F /* Validators.swift */,
 			);
 			path = SwiftJsonSchema;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				D788760A1DBB811300B0E10F /* PrimaryType.swift in Sources */,
 				D78876081DBB80CB00B0E10F /* SwiftJsonSchema.swift in Sources */,
+				D788760C1DBB8FE100B0E10F /* Validators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
